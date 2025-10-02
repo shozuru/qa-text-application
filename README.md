@@ -1,5 +1,5 @@
 # QA Text Application
-This question-answering text application built on top of the DistilBERT (distilbert-base-cased-distilled-squad) model allows users to provide a passage of text along with a specific question, and the system generates a context-based answer derived from the given passage.
+A question-answering text application built on top of the DistilBERT (distilbert-base-cased-distilled-squad) model that allows users to provide a passage of text along with a specific question, with the system generating a context-based answer derived from the given passage.
 
 # Features
 * Takes a passage of text and answers user-provided questions based on context.
