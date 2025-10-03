@@ -7,6 +7,12 @@
     align-items: center;
 }
 
+.enter-some-text {
+    border: solid black 2px;
+    border-radius: 8px;
+    width: 200px;
+}
+
 .output-prompt {
     width: 100%;
     margin-bottom: 1px;
@@ -20,7 +26,7 @@
     width: 90%;
     overflow-y: auto;
     max-height: 235px;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
 }
 
 .question-answer-entry {

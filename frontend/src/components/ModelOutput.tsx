@@ -36,29 +36,42 @@ const ModelOutput: React.FC<ReceivedUserData> =
                     AI Generated Answers:
                 </div>
 
-                <div
-                    className="output-items"
-                >
-                    {zippedList.map((set, i) => (
-                        <li
-                            className="question-answer-entry"
-                            key={i}
+                {zippedList.length === 0 ? (
+                    <div>
+                        <p
+                            className="enter-some-text"
                         >
-                            <div
-                                className="question-text"
-                            >
-                                Q: {set.question}
-                            </div>
+                            Your question and an AI generated response will
+                            appear here.
+                        </p>
+                    </div>
+                ) : (
 
-                            <div
-                                className="answer-text"
+                    <div
+                        className="output-items"
+                    >
+                        {zippedList.map((set, i) => (
+                            <li
+                                className="question-answer-entry"
+                                key={i}
                             >
-                                A: {set.answer}
-                            </div>
-                        </li>
-                    ))}
-                </div>
-            </div>
+                                <div
+                                    className="question-text"
+                                >
+                                    Q: {set.question}
+                                </div>
+
+                                <div
+                                    className="answer-text"
+                                >
+                                    A: {set.answer}
+                                </div>
+                            </li>
+                        ))}
+                    </div>
+                )
+                }
+            </div >
         )
     }
 
