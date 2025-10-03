@@ -24,14 +24,14 @@ git clone https://github.com/shozuru/qa-text-application.git
 cd qa-text-application
 ```
 
-# Installing backend:
+# Installing backend
 ```
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-# Installing frontend:
+# Installing frontend
 ```
 cd frontend
 npm install
