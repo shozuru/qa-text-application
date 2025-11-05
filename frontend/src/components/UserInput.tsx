@@ -28,7 +28,7 @@ const UserInput: React.FC<SendData> = ({ onDataSend }) => {
 
     const handleSendTobackend = async (context: string, question: string) => {
 
-        axios.post("http://127.0.0.1:8000/answer/",
+        axios.post("https://qa-text-application.duckdns.org/answer",
             {
                 "context": context,
                 "question": question
